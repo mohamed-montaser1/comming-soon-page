@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+@font-face {
+  font-family: ar-font;
+  src: url(../fonts/Cairo-SemiBold.ttf);
+}
+
+body {
+  font-family: ar-font;
+  direction: rtl;
+}
+
+header {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header .branding {
+  margin: 100px auto 60px;
+  display: inline-block;
+  padding-bottom: 35px;
+  border-bottom: 2px solid #464b52;
+}
+
+header .heading-page h1 {
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+  line-height: 75px;
+}
+
+@media (max-width: 364px) {
+  header .heading-page h1 {
+    font-size: 40px;
+  }
+}
+
+header .heading-page p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #acacac;
+  min-width: 40%;
+  margin: 0 auto;
+}
+
+header .count-down {
+  width: 60%;
+  margin: 90px auto;
+}
+
+header .counter {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header .count-amount {
+  font-size: 60px;
+  display: block;
+  font-weight: bold;
+  color: #ffce00;
+}
+
+header .count-period {
+  color: #fff;
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+header .send-notification p {
+  color: #fff;
+  font-size: 18px;
+}
+
+header .input-group {
+  width: 40%;
+  margin: auto;
+  transform: translateY(30%);
+}
+.invalid-feedback {
+  margin-bottom: -30px;
+}
+
+@media (min-width: 414px) and (max-width: 677px) {
+  header .send-notification .input-group {
+    width: 90%;
+  }
+}
+
+header .send-notification .input-group button {
+  background-color: #ffce00;
+  margin: 13px 33px;
+  border-radius: 0;
+}
+
+header .send-notification .input-group input {
+  border-radius: 0;
+  border: 2px solid #e6e6e6;
+  position: relative;
+  top: 13px;
+  height: calc(3rem + 6px);
+  text-align: right;
+  color: #0c0000;
+  font-size: 18px;
+}
+
+@media (max-width: 414px) {
+  header .send-notification .input-group button {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+  }
+  header .send-notification .input-group {
+    width: 94%;
+  }
+}
+
+section.features {
+  padding: 100px 0;
+}
+
+section.features h2 {
+  font-size: 45px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+section.features .row .d-flex {
+  border: 4px solid #fafafa;
+  padding: 20px 10px;
+  margin-bottom: 57px;
+  max-height: 190px;
+}
+
+@media (max-width: 289px) {
+  section.features .row .d-flex {
+    margin-bottom: 90px;
+  }
+}
+
+section.features .row .d-flex h4 {
+  font-size: 24px;
+  color: #555;
+}
+
+section.features .row .d-flex p {
+  font-size: 15px;
+  line-height: 25px;
+  color: #a1a1a1;
+}
+
+section.features .row .col-md-6:nth-child(even) {
+  direction: ltr;
+}
+
+footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+footer .footer-notification {
+  padding: 70px 9px;
+  background-color: rgba(255, 206, 0, 0.7);
+}
+
+footer .footer-notification h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 437px) {
+  footer .footer-notification h3 {
+    width: 100%;
+  }
+}
+
+footer .input-group {
+  width: 40%;
+  margin: auto;
+}
+
+footer .input-group .form-control {
+  border-radius: 0;
+  font-size: 18px;
+  border-color: white;
+  text-align: right;
+  color: #0c0000;
+	height: 65px;
+}
+
+footer .input-group button {
+  border-radius: 0;
+  background-color: #393939;
+  padding: 13px 33px;
+  border-radius: 0;
+}
+
+footer .social-media {
+  background-color: rgba(57, 57, 57, 0.9);
+  padding: 100px 0 30px;
+}
+
+footer .social-media h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+footer .social-media .list-inline a {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.14);
+  color: white;
+  display: block;
+  transition: 0.5s;
+}
+
+footer .social-media .list-inline a:hover {
+  background-color: #fad32f;
+  color: rgba(57, 57, 57, 0.9);
+}
+
+footer .social-media hr {
+  width: 25%;
+  margin: 50px auto 30px;
+}
+
+footer .social-media a.email {
+  color: #b4b4b4;
+  text-decoration: none;
+}
+
+footer .social-media a.email i {
+  color: #ffce00;
+  margin-left: 5px;
+}
+@media (max-width: 414px) {
+  footer .input-group button {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+  }
+  footer .input-group {
+    width: 94%;
+  }
+}
+@media (max-width: 314px) {
+  .twitter {
+    margin-bottom: 20px;
+  }
+  .instagram {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 677px) {
+  footer .footer-notification .input-group {
+    width: 90%;
+  }
+}
